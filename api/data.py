@@ -228,5 +228,26 @@ data = {
 
             }
         }
+    },
+    "Beja": {
+        "region2": {
+            "Amdoun": {
+                "Adailia": {"zip": "9030"},
+                "Ain El Goussa": {"zip": "9030"},
+                "Ain Ghenem": {"zip": "9030"},
+
+            }
+        }
     }
+
 }
+
+ville_list = (data['Ariana']['region2'].keys())
+
+dict = {
+
+}
+for i, item in enumerate(ville_list):
+    dict[i+1] = item
+
+print(dict)
