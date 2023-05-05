@@ -70,3 +70,8 @@ async def cities(region: str):
     return dict
 
 
+@app.get("/region_city")
+async def region_city(city: str):
+    return get_region_by_city(city)
+
+
