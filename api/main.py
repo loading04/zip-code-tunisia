@@ -75,3 +75,6 @@ async def region_city(city: str):
     return get_region_by_city(city)
 
 
+@app.get("/gover_city")
+async def gover_city(city: str):
+    return get_gover_by_city(city)
