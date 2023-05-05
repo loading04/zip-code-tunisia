@@ -109,7 +109,7 @@ data = {
             "Cité Ghouzaila": {"zip": "2073"},
             "Cité Hedi Nouira": {"zip": "2073"},
             "Cité Jebira": {"zip": "2073"},
-            "Cité Snit": {"zip": "2073"},
+            "Cité Snit (Soukra)": {"zip": "2073"},
             "Cité Star": {"zip": "2073"},
             "Cité Touilia": {"zip": "2036"},
             "Dar Fadhal": {"zip": "2036"},
@@ -172,7 +172,7 @@ data = {
             "Cité Mehrzia 2": {"zip": "2083"},
             "Cité Sidi Salah": {"zip": "2056"},
             "Cité Sidi Slimene": {"zip": "2081"},
-            "Cité Snit": {"zip": "2081"},
+            "Cité Snit (Raoued)": {"zip": "2081"},
             "Cité Zghab": {"zip": "2056"},
             "Complexe Technologique": {"zip": "2088"},
             "Douar El Hendi": {"zip": "2081"},
@@ -237,8 +237,7 @@ data = {
 
 }
 
-
-region = "Ettadhamen"
+city = "Charguia 1"
 
 
 def find_parent(tree, child):
@@ -248,7 +247,34 @@ def find_parent(tree, child):
     return 0
 
 
+# print(find_parent(data, region))
 
-print(find_parent(data, region))
+def find_children(tree, mother):
+    up = find_parent(tree, mother)
+    return tree[up][mother].keys()
 
 
+# print(find_children(data,region))
+
+def find_child(tree, mother, child):
+    up = find_parent(tree, mother)
+    return tree[up][mother].get(child)
+
+
+# TODO get region by city input
+def get_region_by_city(city):
+    for gover in data:
+        for region in data[gover]:
+            if find_child(data, region, city):
+                return region
+
+
+# TODO get gover by city input
+def get_gover_by_city(city):
+    if get_region_by_city(city) is not None:
+        region = get_region_by_city(city)
+        gover = find_parent(data, region)
+        return gover
+
+
+print(get_gover_by_city(city))

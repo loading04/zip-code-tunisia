@@ -1,4 +1,7 @@
-import random
+# TODO get gover by city input
+# TODO get cities by gover
+
+
 import fastapi
 import data
 
@@ -17,12 +20,36 @@ def find_parent(tree, child):
     return 0
 
 
-@app.get("/region")
-async def region(ville: str):
-    ville_list = (db[ville].keys())
+def find_children(tree, mother):
+    up = find_parent(tree, mother)
+    return tree[up][mother].keys()
+
+
+def find_child(tree, mother, child):
+    up = find_parent(tree, mother)
+    return tree[up][mother].get(child)
+
+
+def get_region_by_city(city):
+    for gover in db:
+        for region in db[gover]:
+            if find_child(db, region, city):
+                return region
+
+
+def get_gover_by_city(city):
+    if get_region_by_city(city) is not None:
+        region = get_region_by_city(city)
+        gover = find_parent(db, region)
+        return gover
+
+
+@app.get("/region_gover")
+async def region_gover(gover: str):
+    region_list = (db[gover].keys())
     dict = {
     }
-    for i, item in enumerate(ville_list):
+    for i, item in enumerate(region_list):
         dict[i + 1] = item
     return dict
 
@@ -31,5 +58,15 @@ async def region(ville: str):
 async def gover(region: str):
     governorat = find_parent(db, region)
     return {governorat}
+
+
+@app.get("/cities")
+async def cities(region: str):
+    cities_list = find_children(db, region)
+    dict = {
+    }
+    for i, item in enumerate(cities_list):
+        dict[i + 1] = item
+    return dict
 
 
