@@ -6,8 +6,8 @@ This API made by [FastApi](https://fastapi.tiangolo.com/)
 
 # API ROUTES :
 
-# /region
-The Region endpoint is a GET request that returns a dictionary of regions for a given city. The endpoint takes a `ville` parameter, which is the name of the city for which the regions are being requested.
+# /region_gover
+The Region endpoint is a GET request that returns a dictionary of regions for a given governorate. The endpoint takes a `gover` parameter, which is the name of the governorate for which the regions are being requested.
 
 ### Endpoint URL
 ```
@@ -15,7 +15,7 @@ The Region endpoint is a GET request that returns a dictionary of regions for a 
   ```
 ### Parameters
 
-ville (required): The name of the city for which regions are being requested.
+gover (required): The name of the governorate for which regions are being requested.
 
 ### Usage
 
@@ -23,7 +23,7 @@ The endpoint returns a JSON object with a dictionary of regions for the specifie
 
 ### Example of Usage
 ```
- http://127.0.0.1:8000/region?ville=Ariana
+ http://127.0.0.1:8000/region_gover?gover=Ariana
   ```
 ### Example of Response
 
@@ -40,4 +40,130 @@ The endpoint returns a JSON object with a dictionary of regions for the specifie
 ````
 # /gover
 
+The Gover endpoint is a GET request that returns the governorate for a given region. The endpoint takes a `region` parameter, which is the name of the region for which the governorate is being requested.
 
+### Endpoint URL
+```
+ GET /gover
+  ```
+### Parameters
+
+region (required): The name of the region for which the governorate is being requested.
+
+### Usage
+The endpoint returns a JSON object with a single value pair , and the value is a string representing the name of the governorate that the region belongs to.
+
+### Example of Usage
+```
+  http://127.0.0.1:8000/gover?region=Ariana Ville
+
+  ```
+
+### Example of Response
+
+````
+[
+"Ariana"
+]
+````
+
+# /cities
+
+The Cities endpoint is a GET request that returns a dictionary of cities for a given region. The endpoint takes a `region` parameter, which is the name of the region for which the cities are being requested.
+
+### Endpoint URL
+```
+ GET /cities
+  ```
+
+### Parameters
+
+region (required): The name of the region for which cities are being requested.
+
+### Usage
+The endpoint returns a JSON object with a dictionary of cities for the specified region. Each key in the dictionary is an integer that represents the city's position in the list, starting from 1. The value associated with each key is a string that represents the name of the city.
+
+### Example of Usage
+
+```
+  http://127.0.0.1:8000/gover?region=Ariana Ville
+
+  ```
+
+### Example of Response
+
+````
+{
+  "1": "Ariana",
+  "2": "Borj El Baccouche",
+  "3": "Centre Commercial Ikram",
+                .
+                .   
+                .
+  "33": "Résidence Kortoba",
+  "34": "Riadh Landlous"
+}
+````
+
+# /region_city
+
+The Region-City endpoint is a GET request that returns the region for a given city. The endpoint takes a `city` parameter, which is the name of the city for which the region is being requested.
+
+## Endpoint URL
+
+### Endpoint URL
+```
+ GET /region_city
+  ```
+
+### Parameters
+city (required): The name of the city for which the region is being requested.
+
+### Usage 
+The endpoint returns a JSON object with a single key-value pair, where the key is "region" and the value is a string representing the name of the region that the city belongs to.
+
+### Example of Usage
+
+
+```
+  http://127.0.0.1:8000/region_city?city=Cité Belvedere 2
+  ```
+### Example of Response
+
+````
+[
+"Ariana Ville"
+]
+````
+
+# /gover_city
+
+The Gover-City endpoint is a GET request that returns the governorate for a given city. The endpoint takes a `city` parameter, which is the name of the city for which the governorate is being requested.
+
+### Endpoint URL
+
+```
+  GET /gover_city
+  ```
+
+### Parameters
+
+city (required): The name of the city for which the governorate is being requested.
+
+
+### Usage 
+The endpoint returns a JSON object with a single value pair, representing the name of the governorate that the city belongs to.
+
+### Example of Usage
+
+```
+  http://127.0.0.1:8000/region_city?city=Cité Belvedere 2
+  ```
+
+### Example of Response
+
+````
+[
+"Ariana"
+]
+````
