@@ -78,7 +78,24 @@ def get_region_by_zip(zip):
                 if code == zip:
                     return region
 
+def get_gover_by_zip(zip):
+    i = 0
+    for gover in db:
+        for region in db[gover]:
+            for city in find_children(db, region):
+                g = gover
+                r = region
+                c = city
+                code = db[g][r][c]["zip"]
+                if code == zip:
+                    return gover
 
+
+
+
+@app.get("/gover_zip")
+async def gover_zip(zip: str):
+    return get_gover_by_zip(zip)
 
 
 @app.get("/region_zip")

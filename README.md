@@ -251,3 +251,26 @@ http://127.0.0.1:8000/region_zip?zip=2080
 "Ariana Ville"
 ```
 
+# /gover_zip
+
+The gover-Zip endpoint is a GET request that returns the governorate of a zip code. The endpoint takes a `zip` parameter, which is the zip code for which the governorate is being requested.
+
+## Parameters
+
+zip (required): The zip code for which the governorate is being requested.
+
+## Usage
+
+The endpoint returns a JSON object with a single value pair, representing the governorate name of the zip code that was requested.
+
+## Example of Usage
+
+````
+http://127.0.0.1:8000/gover_zip?zip=2080
+````
+## Example of Response 
+
+```
+"Ariana"
+```
+
