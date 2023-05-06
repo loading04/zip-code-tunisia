@@ -8,7 +8,7 @@ data = {
             "Cité Borj Turki 1": {"zip": "2058"},
             "Cité Borj Turki 2": {"zip": "2058"},
             "Cité des Roses": {"zip": "2080"},
-            "Cité du Jardin": {"zip": "	2080"},
+            "Cité du Jardin": {"zip": "2080"},
             "Cité du Printemps": {"zip": "2080"},
             "Cité du Soleil": {"zip": "2091"},
             "Cité El Intissar 1": {"zip": "2091"},
@@ -38,32 +38,32 @@ data = {
 
         },
         "Ettadhamen": {
-            "Cité 18 Janvier": {"zip:2041"},
-            "Cité Ben Yerfes": {"zip:2041"},
-            "Cité El Houda": {"zip:2041"},
-            "Cité Ennasser": {"zip:2041"},
-            "Cité Ettadhamen": {"zip:2041"},
-            "Cité Ettayarene": {"zip:2041"},
-            "Cité Sfar": {"zip:2041"},
-            "Cité Snit 2": {"zip:2041"},
-            "Cité Snit Nagra": {"zip:2041"},
+            "Cité 18 Janvier": {"zip": "2041"},
+            "Cité Ben Yerfes": {"zip": "2041"},
+            "Cité El Houda": {"zip": "2041"},
+            "Cité Ennasser": {"zip": "2041"},
+            "Cité Ettadhamen": {"zip": "2041"},
+            "Cité Ettayarene": {"zip": "2041"},
+            "Cité Sfar": {"zip": "2041"},
+            "Cité Snit 2": {"zip": "2041"},
+            "Cité Snit Nagra": {"zip": "2041"},
 
         },
         "Kalaat Landlous": {
-            "Borj El Hadj": {"zip:2061"},
-            "Cité Bir El Araies": {"zip:2022"},
-            "Cité des Martyrs": {"zip:2022"},
-            "Cité El Fejja": {"zip:2022"},
-            "Cité El Mourouj": {"zip:2022"},
-            "Cité El Oulja": {"zip:2022"},
-            "Cité Essibous": {"zip:2022"},
-            "Cité Tarek Ibn Zied": {"zip:2022"},
-            "El Misra": {"zip:2061"},
-            "Ferme Hababou": {"zip:2061"},
-            "Ferme Mustapha": {"zip:2061"},
-            "Henchir Toubias": {"zip:2061"},
-            "Kalaat Landlous": {"zip:2022"},
-            "Pont de Bizerte": {"zip:2061"},
+            "Borj El Hadj": {"zip": "2061"},
+            "Cité Bir El Araies": {"zip": "2022"},
+            "Cité des Martyrs": {"zip": "2022"},
+            "Cité El Fejja": {"zip": "2022"},
+            "Cité El Mourouj": {"zip": "2022"},
+            "Cité El Oulja": {"zip": "2022"},
+            "Cité Essibous": {"zip": "2022"},
+            "Cité Tarek Ibn Zied": {"zip": "2022"},
+            "El Misra": {"zip": "2061"},
+            "Ferme Hababou": {"zip": "2061"},
+            "Ferme Mustapha": {"zip": "2061"},
+            "Henchir Toubias": {"zip": "2061"},
+            "Kalaat Landlous": {"zip": "2022"},
+            "Pont de Bizerte": {"zip": "2061"},
 
         },
         "La Soukra": {
@@ -233,7 +233,7 @@ data = {
             "Ain El Goussa": {"zip": "9030"},
             "Ain Ghenem": {"zip": "9030"},
         }
-    }
+    },
 
 }
 
@@ -277,4 +277,36 @@ def get_gover_by_city(city):
         return gover
 
 
-print(get_gover_by_city(city))
+# TODO get city by zip code
+# TODO get region by zip code
+# TODO get governorat by zip code
+# TODO get all city and zip by region
+# TODO get all city and zip by governorat
+
+def zip_by_city(city):
+    zip = None
+    if get_region_by_city(city) is not None:
+        region = get_region_by_city(city)
+        gover = find_parent(data, region)
+        zip = data[gover][region][city]["zip"]
+    return {"zip": zip}
+
+
+def get_city_by_zip(zip):
+    dict = {}
+    i = 0
+    for gover in data:
+        for region in data[gover]:
+            for city in find_children(data, region):
+                g = gover
+                r = region
+                c = city
+                code = data[g][r][c]["zip"]
+                if code == zip:
+                    i += 1
+                    dict[i] = city
+
+    return dict
+
+
+print(get_city_by_zip("2091"))

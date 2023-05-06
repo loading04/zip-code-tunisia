@@ -113,6 +113,6 @@ async def gover_city(city: str):
 
 @app.get("/city_zip")
 async def city_zip(zip: str):
-    return get_city_by_zip(zip)
+    return get_cities_by_zip(zip)
 
 
