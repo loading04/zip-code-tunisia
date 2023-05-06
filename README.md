@@ -228,3 +228,26 @@ The endpoint returns a JSON object with a single key-value pair, representing th
 }
 
 ```
+# /region_zip
+
+The Region-Zip endpoint is a GET request that returns the region of a zip code. The endpoint takes a `zip` parameter, which is the zip code for which the region is being requested.
+
+## Parameters
+
+zip (required): The zip code for which the region is being requested.
+
+## Usage
+
+The endpoint returns a JSON object with a single value pair, representing the region name of the zip code that was requested.
+
+## Example of Usage
+
+````
+http://127.0.0.1:8000/region_zip?zip=2080
+````
+## Example of Response 
+
+```
+"Ariana Ville"
+```
+

@@ -1,5 +1,3 @@
-# TODO get zip code by city
-# TODO get city by zip code
 # TODO get region by zip code
 # TODO get governorat by zip code
 # TODO get all city and zip by region
@@ -67,6 +65,25 @@ def get_cities_by_zip(zip):
 
     return dict
 
+
+def get_region_by_zip(zip):
+    i = 0
+    for gover in db:
+        for region in db[gover]:
+            for city in find_children(db, region):
+                g = gover
+                r = region
+                c = city
+                code = db[g][r][c]["zip"]
+                if code == zip:
+                    return region
+
+
+
+
+@app.get("/region_zip")
+async def region_zip(zip: str):
+    return get_region_by_zip(zip)
 
 
 @app.get("/cities_zip")
