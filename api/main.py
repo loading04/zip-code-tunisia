@@ -51,8 +51,29 @@ def zip_by_city(city):
         zip = db[gover][region][city]["zip"]
     return {"zip":zip}
 
+def get_cities_by_zip(zip):
+    i = 0
+    dict = {}
+    for gover in db:
+        for region in db[gover]:
+            for city in find_children(db, region):
+                g = gover
+                r = region
+                c = city
+                code = db[g][r][c]["zip"]
+                if code == zip:
+                    i += 1
+                    dict[i] = city
 
-@app.get("/zip-city")
+    return dict
+
+
+
+@app.get("/cities_zip")
+async def cities_zip(zip: str):
+    return get_cities_by_zip(zip)
+
+@app.get("/zip_city")
 async def zip_city(city: str):
     return zip_by_city(city)
 
@@ -88,3 +109,10 @@ async def region_city(city: str):
 @app.get("/gover_city")
 async def gover_city(city: str):
     return {get_gover_by_city(city)}
+
+
+@app.get("/city_zip")
+async def city_zip(zip: str):
+    return get_city_by_zip(zip)
+
+

@@ -168,7 +168,7 @@ The endpoint returns a JSON object with a single value pair, representing the na
 ]
 ````
 
-# /zip-city
+# /zip_city
 
 The Zip-City endpoint is a GET request that returns the zip code for a given city. The endpoint takes a `city` parameter, which is the name of the city for which the zip code is being requested.
 
@@ -193,3 +193,38 @@ The endpoint returns a JSON object with a single key-value pair, representing th
   "zip": "2091"
 }
 ````
+
+# /cities_zip
+
+The Cities-Zip endpoint is a GET request that returns the cities/city for a given zip code. The endpoint takes a `zip` parameter, which is the zip code for which the cities are being requested.
+
+## Parameters
+
+zip (required): The zip code for which the cities/city are being requested.
+
+## Usage
+
+The endpoint returns a JSON object with a single key-value pair, representing the key `number` and value `city` of the zip code that was requested.
+
+## Example of Usage
+
+````
+  http://127.0.0.1:8000/cities_zip?zip=2080
+````
+
+## Example of Response 
+
+```
+{
+  "1": "Ariana",
+  "2": "Cité des Roses",
+  "3": "Cité du Jardin",
+  "4": "Cité du Printemps",
+  "5": "Cité Ennouzha",
+  "6": "Cité Essaada (ariana)",
+  "7": "Cité Jaafar",
+  "8": "Nouvelle Ariana",
+  "9": "Résidence Ennour (ariana)"
+}
+
+```
