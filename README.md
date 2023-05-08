@@ -274,3 +274,55 @@ http://127.0.0.1:8000/gover_zip?zip=2080
 "Ariana"
 ```
 
+## /cityzip_region
+
+The CityZip-Region endpoint is a GET request that returns the zip codes and cities within a given region. The endpoint takes a ``region`` parameter, which is the name of the region for which the zip codes and cities are being requested.
+
+## Parameters
+
+region (required): The name of the region for which the zip codes and cities are being requested.
+
+## Usage
+
+The endpoint returns a JSON object with key-value pairs, where the keys are integers and the values are dictionaries containing the city and corresponding zip code for each entry. The endpoint provides the zip codes and cities within the specified region.
+
+## Example of Usage
+
+
+````
+http://127.0.0.1:8000/cityzip_region?region=Ariana Ville
+````
+
+## Example of Response 
+
+```
+{
+  "1": {
+    "Ariana": "2080"
+  },
+  "2": {
+    "Borj El Baccouche": "2037"
+  },
+  "3": {
+    "Centre Commercial Ikram": "2037"
+  },
+  "4": {
+    "Cité Belvedere 2": "2091"
+  },
+  "5": {
+    "Cité Borj Turki 1": "2058"
+  },
+  "6": {
+    "Cité Borj Turki 2": "2058"
+  },
+  "7": {
+    "Cité des Roses": "2080"
+  },
+  "8": {
+    "Cité du Jardin": "2080"
+  },
+  "9": {
+    "Cité du Printemps": "2080"
+  },
+```
+

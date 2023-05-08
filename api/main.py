@@ -1,5 +1,3 @@
-# TODO get region by zip code
-# TODO get governorat by zip code
 # TODO get all city and zip by region
 # TODO get all city and zip by governorat
 
@@ -7,14 +5,13 @@
 import fastapi
 import data
 
-
 app = fastapi.FastAPI()
 db = data.data
 
 
 def find_parent(tree, child):
     for gover in tree:
-        if db[gover].get(child):
+        if tree[gover].get(child):
             return gover
     return 0
 
@@ -42,12 +39,14 @@ def get_gover_by_city(city):
         gover = find_parent(db, region)
         return gover
 
+
 def zip_by_city(city):
     if get_region_by_city(city) is not None:
         region = get_region_by_city(city)
         gover = find_parent(db, region)
         zip = db[gover][region][city]["zip"]
-    return {"zip":zip}
+    return {"zip": zip}
+
 
 def get_cities_by_zip(zip):
     i = 0
@@ -78,6 +77,7 @@ def get_region_by_zip(zip):
                 if code == zip:
                     return region
 
+
 def get_gover_by_zip(zip):
     i = 0
     for gover in db:
@@ -91,6 +91,16 @@ def get_gover_by_zip(zip):
                     return gover
 
 
+@app.get("/cityzip_region")
+async def cityzip_region(region: str):
+
+    gover = find_parent(db, region)
+    dict = {}
+
+    for i, item in enumerate(db[gover][region]):
+        for zip in db[gover][region][item]:
+            dict[i + 1] = {item: db[gover][region][item]["zip"]}
+    return dict
 
 
 @app.get("/gover_zip")
@@ -107,9 +117,11 @@ async def region_zip(zip: str):
 async def cities_zip(zip: str):
     return get_cities_by_zip(zip)
 
+
 @app.get("/zip_city")
 async def zip_city(city: str):
     return zip_by_city(city)
+
 
 @app.get("/region_gover")
 async def region_gover(gover: str):
@@ -148,5 +160,3 @@ async def gover_city(city: str):
 @app.get("/city_zip")
 async def city_zip(zip: str):
     return get_cities_by_zip(zip)
-
-

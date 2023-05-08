@@ -1,3 +1,5 @@
+import pprint
+
 data = {
     "Ariana": {
         "Ariana Ville": {
@@ -237,76 +239,3 @@ data = {
 
 }
 
-city = "Charguia 1"
-
-
-def find_parent(tree, child):
-    for gover in tree:
-        if data[gover].get(child):
-            return gover
-    return 0
-
-
-# print(find_parent(data, region))
-
-def find_children(tree, mother):
-    up = find_parent(tree, mother)
-    return tree[up][mother].keys()
-
-
-# print(find_children(data,region))
-
-def find_child(tree, mother, child):
-    up = find_parent(tree, mother)
-    return tree[up][mother].get(child)
-
-
-# TODO get region by city input
-def get_region_by_city(city):
-    for gover in data:
-        for region in data[gover]:
-            if find_child(data, region, city):
-                return region
-
-
-# TODO get gover by city input
-def get_gover_by_city(city):
-    if get_region_by_city(city) is not None:
-        region = get_region_by_city(city)
-        gover = find_parent(data, region)
-        return gover
-
-
-# TODO get city by zip code
-# TODO get region by zip code
-# TODO get governorat by zip code
-# TODO get all city and zip by region
-# TODO get all city and zip by governorat
-
-def zip_by_city(city):
-    zip = None
-    if get_region_by_city(city) is not None:
-        region = get_region_by_city(city)
-        gover = find_parent(data, region)
-        zip = data[gover][region][city]["zip"]
-    return {"zip": zip}
-
-
-def get_city_by_zip(zip):
-    dict = {}
-    i = 0
-    for gover in data:
-        for region in data[gover]:
-            for city in find_children(data, region):
-                g = gover
-                r = region
-                c = city
-                code = data[g][r][c]["zip"]
-                if code == zip:
-                    i += 1
-                    dict[i] = city
-
-    return dict
-
-
-print(get_city_by_zip("2091"))
