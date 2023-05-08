@@ -1,6 +1,3 @@
-# TODO get all region and city and zip by governorat
-
-
 import fastapi
 import data
 
@@ -8,117 +5,119 @@ app = fastapi.FastAPI()
 db = data.data
 
 
-def find_parent(tree, child):
-    for gover in tree:
-        if tree[gover].get(child):
-            return gover
-    return 0
+def find_parent(child):
+    for governorate in db:
+        if db[governorate].get(child):
+            return governorate
 
 
-def find_children(tree, mother):
-    up = find_parent(tree, mother)
-    return tree[up][mother].keys()
+
+def find_children(mother):
+    up = find_parent(mother)
+    return db[up][mother].keys()
 
 
-def find_child(tree, mother, child):
-    up = find_parent(tree, mother)
-    return tree[up][mother].get(child)
+def find_child(mother, child):
+    up = find_parent(mother)
+    return db[up][mother].get(child)
 
 
 def get_region_by_city(city):
-    for gover in db:
-        for region in db[gover]:
-            if find_child(db, region, city):
+    for governorate in db:
+        for region in db[governorate]:
+            if find_child(region, city):
                 return region
 
 
 def get_gover_by_city(city):
     if get_region_by_city(city) is not None:
         region = get_region_by_city(city)
-        gover = find_parent(db, region)
-        return gover
+        governorate = find_parent(region)
+        return governorate
 
 
 def zip_by_city(city):
+    code = None
     if get_region_by_city(city) is not None:
         region = get_region_by_city(city)
-        gover = find_parent(db, region)
-        zip = db[gover][region][city]["zip"]
-    return {"zip": zip}
+        governorate = find_parent(region)
+        code = db[governorate][region][city]["zip"]
+    return {"zip": code}
 
 
-def get_cities_by_zip(zip):
+def get_cities_by_zip(zip_code):
     i = 0
-    dict = {}
-    for gover in db:
-        for region in db[gover]:
-            for city in find_children(db, region):
-                g = gover
+    dictionary = {}
+    for governorate in db:
+        for region in db[governorate]:
+            for city in find_children(region):
+                g = governorate
                 r = region
                 c = city
                 code = db[g][r][c]["zip"]
-                if code == zip:
+                if code == zip_code:
                     i += 1
-                    dict[i] = city
+                    dictionary[i] = city
 
-    return dict
+    return dictionary
 
 
-def get_region_by_zip(zip):
-    i = 0
-    for gover in db:
-        for region in db[gover]:
-            for city in find_children(db, region):
-                g = gover
+def get_region_by_zip(zip_code):
+    for governorate in db:
+        for region in db[governorate]:
+            for city in find_children(region):
+                g = governorate
                 r = region
                 c = city
                 code = db[g][r][c]["zip"]
-                if code == zip:
+                if code == zip_code:
                     return region
 
 
-def get_gover_by_zip(zip):
-    i = 0
-    for gover in db:
-        for region in db[gover]:
-            for city in find_children(db, region):
-                g = gover
+def get_gover_by_zip(zip_code):
+    for governorate in db:
+        for region in db[governorate]:
+            for city in find_children(region):
+                g = governorate
                 r = region
                 c = city
                 code = db[g][r][c]["zip"]
-                if code == zip:
-                    return gover
+                if code == zip_code:
+                    return governorate
+
+@app.get("/")
+async def all_data():
+    return db
+
 
 @app.get("/details_gover")
-async def details_gover(gover: str):
-    return db[gover]
+async def details_gover(governorate: str):
+    return db[governorate]
 
 
 @app.get("/cityzip_region")
 async def cityzip_region(region: str):
+    governorate = find_parent(region)
+    dictionary = {}
 
-    gover = find_parent(db, region)
-    dict = {}
-
-    for i, item in enumerate(db[gover][region]):
-        for zip in db[gover][region][item]:
-            dict[i + 1] = {item: db[gover][region][item]["zip"]}
-    return dict
+    for i, item in enumerate(db[governorate][region]):
+        dictionary[i + 1] = {item: db[governorate][region][item]["zip"]}
+    return dictionary
 
 
 @app.get("/gover_zip")
-async def gover_zip(zip: str):
-    return get_gover_by_zip(zip)
+async def gover_zip(zip_code: str):
+    return get_gover_by_zip(zip_code)
 
 
 @app.get("/region_zip")
-async def region_zip(zip: str):
-    return get_region_by_zip(zip)
+async def region_zip(zip_code: str):
+    return get_region_by_zip(zip_code)
 
 
 @app.get("/cities_zip")
-async def cities_zip(zip: str):
-    return get_cities_by_zip(zip)
+async def cities_zip(zip_code: str):
+    return get_cities_by_zip(zip_code)
 
 
 @app.get("/zip_city")
@@ -127,27 +126,27 @@ async def zip_city(city: str):
 
 
 @app.get("/region_gover")
-async def region_gover(gover: str):
-    region_list = (db[gover].keys())
-    dict = {}
+async def region_gover(governorate: str):
+    region_list = (db[governorate].keys())
+    dictionary = {}
     for i, item in enumerate(region_list):
-        dict[i + 1] = item
-    return dict
+        dictionary[i + 1] = item
+    return dictionary
 
 
 @app.get("/gover")
 async def gover(region: str):
-    governorat = find_parent(db, region)
+    governorat = find_parent(region)
     return {governorat}
 
 
 @app.get("/cities")
 async def cities(region: str):
-    cities_list = find_children(db, region)
-    dict = {}
+    cities_list = find_children(region)
+    dictionary = {}
     for i, item in enumerate(cities_list):
-        dict[i + 1] = item
-    return dict
+        dictionary[i + 1] = item
+    return dictionary
 
 
 @app.get("/region_city")
@@ -161,5 +160,5 @@ async def gover_city(city: str):
 
 
 @app.get("/city_zip")
-async def city_zip(zip: str):
-    return get_cities_by_zip(zip)
+async def city_zip(zip_code: str):
+    return get_cities_by_zip(zip_code)

@@ -7,7 +7,7 @@ This API made by [FastApi](https://fastapi.tiangolo.com/)
 # API ROUTES :
 
 # /region_gover
-The Region endpoint is a GET request that returns a dictionary of regions for a given governorate. The endpoint takes a `gover` parameter, which is the name of the governorate for which the regions are being requested.
+The Region endpoint is a GET request that returns a dictionary of regions for a given governorate. The endpoint takes a `governorate` parameter, which is the name of the governorate for which the regions are being requested.
 
 ### Endpoint URL
 ```
@@ -15,7 +15,7 @@ The Region endpoint is a GET request that returns a dictionary of regions for a 
   ```
 ### Parameters
 
-gover (required): The name of the governorate for which regions are being requested.
+governorate (required): The name of the governorate for which regions are being requested.
 
 ### Usage
 
@@ -196,11 +196,11 @@ The endpoint returns a JSON object with a single key-value pair, representing th
 
 # /cities_zip
 
-The Cities-Zip endpoint is a GET request that returns the cities/city for a given zip code. The endpoint takes a `zip` parameter, which is the zip code for which the cities are being requested.
+The Cities-Zip endpoint is a GET request that returns the cities/city for a given zip code. The endpoint takes a `zip_code` parameter, which is the zip code for which the cities are being requested.
 
 ## Parameters
 
-zip (required): The zip code for which the cities/city are being requested.
+zip_code (required): The zip code for which the cities/city are being requested.
 
 ## Usage
 
@@ -230,11 +230,11 @@ The endpoint returns a JSON object with a single key-value pair, representing th
 ```
 # /region_zip
 
-The Region-Zip endpoint is a GET request that returns the region of a zip code. The endpoint takes a `zip` parameter, which is the zip code for which the region is being requested.
+The Region-Zip endpoint is a GET request that returns the region of a zip code. The endpoint takes a `zip_code` parameter, which is the zip code for which the region is being requested.
 
 ## Parameters
 
-zip (required): The zip code for which the region is being requested.
+zip_code (required): The zip code for which the region is being requested.
 
 ## Usage
 
@@ -253,11 +253,11 @@ http://127.0.0.1:8000/region_zip?zip=2080
 
 # /gover_zip
 
-The gover-Zip endpoint is a GET request that returns the governorate of a zip code. The endpoint takes a `zip` parameter, which is the zip code for which the governorate is being requested.
+The gover-Zip endpoint is a GET request that returns the governorate of a zip code. The endpoint takes a `zip_code` parameter, which is the zip code for which the governorate is being requested.
 
 ## Parameters
 
-zip (required): The zip code for which the governorate is being requested.
+zip_code (required): The zip code for which the governorate is being requested.
 
 ## Usage
 
@@ -329,11 +329,11 @@ http://127.0.0.1:8000/cityzip_region?region=Ariana Ville
 # /details_gover
 
 
-The Details-Gover endpoint is a GET request that returns the all details of a specified governing area (regions , cities , zip codes ). The endpoint takes a ``gover`` parameter, which is the name of the governing area for which the details are being requested.
+The Details-Gover endpoint is a GET request that returns the all details of a specified governing area (regions , cities , zip codes ). The endpoint takes a ``governorate`` parameter, which is the name of the governing area for which the details are being requested.
 
 ## Parameters
 
-gover (required): The name of the governorate for which regions are being requested.
+governorate (required): The name of the governorate for which regions are being requested.
 
 ## Usage
 
