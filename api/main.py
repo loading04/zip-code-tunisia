@@ -1,5 +1,4 @@
-# TODO get all city and zip by region
-# TODO get all city and zip by governorat
+# TODO get all region and city and zip by governorat
 
 
 import fastapi
@@ -89,6 +88,10 @@ def get_gover_by_zip(zip):
                 code = db[g][r][c]["zip"]
                 if code == zip:
                     return gover
+
+@app.get("/details_gover")
+async def details_gover(gover: str):
+    return db[gover]
 
 
 @app.get("/cityzip_region")

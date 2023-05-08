@@ -326,3 +326,39 @@ http://127.0.0.1:8000/cityzip_region?region=Ariana Ville
   },
 ```
 
+# /details_gover
+
+
+The Details-Gover endpoint is a GET request that returns the all details of a specified governing area (regions , cities , zip codes ). The endpoint takes a ``gover`` parameter, which is the name of the governing area for which the details are being requested.
+
+## Parameters
+
+gover (required): The name of the governorate for which regions are being requested.
+
+## Usage
+
+The endpoint returns a JSON object representing the details of the specified governing area. The endpoint provides information on the regions, cities, and zip codes within the specified governing area.
+
+## Example of Usage
+
+```
+http://127.0.0.1:8000/details_gover?gover=Beja
+```
+
+## Example of Response
+
+````
+{
+  "Amdoun": {
+    "Adailia": {
+      "zip": "9030"
+    },
+    "Ain El Goussa": {
+      "zip": "9030"
+    },
+    "Ain Ghenem": {
+      "zip": "9030"
+    }
+  }
+}
+````
