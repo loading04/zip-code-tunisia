@@ -93,17 +93,23 @@ async def all_data():
 
 @app.get("/details_gover")
 async def details_gover(governorate: str):
-    return db[governorate]
+    try:
+        return db[governorate]
+    except:
+        raise fastapi.HTTPException(404, "wrong governorate name")
 
 
 @app.get("/cityzip_region")
 async def cityzip_region(region: str):
-    governorate = find_parent(region)
-    dictionary = {}
+    try:
+        governorate = find_parent(region)
+        dictionary = {}
 
-    for i, item in enumerate(db[governorate][region]):
-        dictionary[i + 1] = {item: db[governorate][region][item]["zip"]}
-    return dictionary
+        for i, item in enumerate(db[governorate][region]):
+            dictionary[i + 1] = {item: db[governorate][region][item]["zip"]}
+        return dictionary
+    except:
+        raise fastapi.HTTPException(404, "wrong region name")
 
 
 @app.get("/gover_zip")
@@ -123,38 +129,48 @@ async def cities_zip(zip_code: str):
 
 @app.get("/zip_city")
 async def zip_city(city: str, region: Optional[str] = None, governorate: Optional[str] = None):
-    if region is not None:
-        if governorate is not None:
-            return {"zip": db[governorate][region][city]["zip"]}
+    try:
+        if region is not None:
+            if governorate is not None:
+                return {"zip": db[governorate][region][city]["zip"]}
+            else:
+                governorate = find_parent(region)
+                return {"zip": db[governorate][region][city]["zip"]}
         else:
-            governorate = find_parent(region)
-            return {"zip": db[governorate][region][city]["zip"]}
-    else:
-        return zip_by_city(city)
+            return zip_by_city(city)
+    except:
+        raise fastapi.HTTPException(404, detail="data not found , arguments not correct")
 
 
 @app.get("/region_gover")
 async def region_gover(governorate: str):
-    region_list = (db[governorate].keys())
-    dictionary = {}
-    for i, item in enumerate(region_list):
-        dictionary[i + 1] = item
-    return dictionary
+    try:
+        region_list = (db[governorate].keys())
+        dictionary = {}
+        for i, item in enumerate(region_list):
+            dictionary[i + 1] = item
+        return dictionary
+    except:
+        raise fastapi.HTTPException(404, detail="data not found , arguments not correct")
 
 
 @app.get("/gover")
 async def gover(region: str):
+
     governorat = find_parent(region)
     return {governorat}
 
 
 @app.get("/cities")
 async def cities(region: str):
-    cities_list = find_children(region)
-    dictionary = {}
-    for i, item in enumerate(cities_list):
-        dictionary[i + 1] = item
-    return dictionary
+    try:
+        cities_list = find_children(region)
+        dictionary = {}
+        for i, item in enumerate(cities_list):
+            dictionary[i + 1] = item
+        return dictionary
+    except:
+        raise fastapi.HTTPException(404,"data not found , arguments not correct")
 
 
 @app.get("/region_city")
