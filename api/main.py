@@ -1,5 +1,6 @@
 import fastapi
 import data
+from typing import Optional
 
 app = fastapi.FastAPI()
 db = data.data
@@ -9,7 +10,6 @@ def find_parent(child):
     for governorate in db:
         if db[governorate].get(child):
             return governorate
-
 
 
 def find_children(mother):
@@ -85,6 +85,7 @@ def get_gover_by_zip(zip_code):
                 if code == zip_code:
                     return governorate
 
+
 @app.get("/")
 async def all_data():
     return db
@@ -121,8 +122,15 @@ async def cities_zip(zip_code: str):
 
 
 @app.get("/zip_city")
-async def zip_city(city: str):
-    return zip_by_city(city)
+async def zip_city(city: str, region: Optional[str] = None, governorate: Optional[str] = None):
+    if region is not None:
+        if governorate is not None:
+            return {"zip": db[governorate][region][city]["zip"]}
+        else:
+            governorate = find_parent(region)
+            return {"zip": db[governorate][region][city]["zip"]}
+    else:
+        return zip_by_city(city)
 
 
 @app.get("/region_gover")
