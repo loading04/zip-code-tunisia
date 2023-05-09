@@ -156,7 +156,6 @@ async def region_gover(governorate: str):
 
 @app.get("/gover")
 async def gover(region: str):
-
     governorat = find_parent(region)
     return {governorat}
 
@@ -170,7 +169,7 @@ async def cities(region: str):
             dictionary[i + 1] = item
         return dictionary
     except:
-        raise fastapi.HTTPException(404,"data not found , arguments not correct")
+        raise fastapi.HTTPException(404, "data not found , arguments not correct")
 
 
 @app.get("/region_city")

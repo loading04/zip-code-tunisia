@@ -234,9 +234,404 @@ data = {
             "Adailia": {"zip": "9030"},
             "Ain El Goussa": {"zip": "9030"},
             "Ain Ghenem": {"zip": "9030"},
-        }
-    },
+            "Beni Melek": {"zip": "9030"},
+            "Bouris": {"zip": "9030"},
+            "Cité de la Poste": {"zip": "9030"},
+            "Cité Erraoudha": {"zip": "9030"},
+            "Cité Hached": {"zip": "9030"},
+            "Cité Taieb Mhiri": {"zip": "9030"},
+            "Eddghabjia": {"zip": "9030"},
+            "Edhhirat": {"zip": "9030"},
+            "El Ayayda": {"zip": "9084"},
+            "El Fraijia": {"zip": "9030"},
+            "El Ghorfa": {"zip": "9030"},
+            "El Graia": {"zip": "9030"},
+            "El Hlikat": {"zip": "9030"},
+            "El Homr": {"zip": "9084"},
+            "El Jouza": {"zip": "9030"},
+            "El Mjales": {"zip": "9030"},
+            "Gaat El Mouhdi": {"zip": "9030"},
+            "Ghouzia": {"zip": "9030"},
+            "Maghraoua": {"zip": "9030"},
+            "Menzel El Gourchi": {"zip": "9084"},
+            "Menzel Hammed": {"zip": "9030"},
+            "Remadhnia": {"zip": "9030"},
+            "Sidi Mbarek": {"zip": "9030"},
+            "Sidi Saadoun": {"zip": "9030"},
+            "Sobah": {"zip": "9030"},
+            "Zahret Mediene": {"zip": "9030"}
+        },
+        "Beja Nord": {
+            "Ain Ksar Hadid": {"zip": "9000"},
+            "Beja": {"zip": "9000"},
+            "Bou Keslane": {"zip": "9000"},
+            "Charchara": {"zip": "9000"},
+            "Cité Afh": {"zip": "9000"},
+            "Cité Ain Bazaz": {"zip": "9000"},
+            "Cité Ain Chemes": {"zip": "9000"},
+            "Cité Ain El Ghoula": {"zip": "9000"},
+            "Cité Beja El Jadida": {"zip": "9000"},
+            "Cité Belle Vue": {"zip": "9000"},
+            "Cité Bir Hofra": {"zip": "9000"},
+            "Cité Boutraa": {"zip": "9000"},
+            "Cité Cnrps": {"zip": "9000"},
+            "Cité de la Police": {"zip": "9000"},
+            "Cité de la Sante 1": {"zip": "9000"},
+            "Cité de la Sante 2": {"zip": "9000"},
+            "Cité des Mimosas": {"zip": "9000"},
+            "Cité des Proffesseurs": {"zip": "9000"},
+            "Cité des Roses": {"zip": "9000"},
+            "Cité Dhamene": {"zip": "9000"},
+            "Cité du Gouvernorat": {"zip": "9000"},
+            "Cité Echifa": {"zip": "9000"},
+            "Cité Economie du Nord": {"zip": "9000"},
+            "Cité Edhahbia 1": {"zip": "9000"},
+            "Cité Edhahbia 2": {"zip": "9000"},
+            "Cité El Baraka": {"zip": "9000"},
+            "Cité El Biadha": {"zip": "9000"},
+            "Cité El Boukhari": {"zip": "9000"},
+            "Cité El Boustene": {"zip": "9000"},
+            "Cité El Habib": {"zip": "9000"},
+            "Cité El Habibia": {"zip": "9000"},
+            "Cité El Haouari": {"zip": "9000"},
+            "Cité El Khadhra": {"zip": "9000"},
+            "Cité El Khadhra Superieur": {"zip": "9000"},
+            "Cité El Manar 1": {"zip": "9000"},
+            "Cité El Manar 2": {"zip": "9000"},
+            "Cité El Manar 3": {"zip": "9000"},
+            "Cité El Manar 4": {"zip": "9000"},
+            "Cité El Manar 5": {"zip": "9000"},
+            "Cité El Mekmda": {"zip": "9000"},
+            "Cité El Mhella": {"zip": "9000"},
+            "Cité El Moustakbel": {"zip": "9000"},
+            "Cité El Mzara": {"zip": "9000"},
+            "Cité El Olfa": {"zip": "9000"},
+            "Cité Ennouzha": {"zip": "9000"},
+            "Cité Erriadh 2": {"zip": "9000"},
+            "Cité Erriadhi 1": {"zip": "9000"},
+            "Cité Essalama": {"zip": "9000"},
+            "Cité Essalem": {"zip": "9000"},
+            "Cité Essanaouber": {"zip": "9000"},
+            "Cité Ezzouhour": {"zip": "9000"},
+            "Cité Garde Nationale": {"zip": "9000"},
+            "Cité Ibn Khaldoun": {"zip": "9000"},
+            "Cité Jardins": {"zip": "9000"},
+            "Cité Jebel El Akhdhar": {"zip": "9000"},
+            "Cité Ksar Bardo": {"zip": "9000"},
+            "Cité Pont Trageon": {"zip": "9000"},
+            "Cité S.r.transport": {"zip": "9000"},
+            "Cité Salah El Maghraoui": {"zip": "9000"},
+            "Cité Salambo": {"zip": "9000"},
+            "Cité Sidi Frej": {"zip": "9000"},
+            "Cité Snit": {"zip": "9000"},
+            "Cité Taieb Mhiri": {"zip": "9000"},
+            "Cité Usine du Sucre1": {"zip": "9000"},
+            "Cité Usine du Sucre2": {"zip": "9000"},
+            "El Hamrounia": {"zip": "9000"},
+            "El Mounchar": {"zip": "9000"},
+            "El Mzara": {"zip": "9031"},
+            "El Yousri": {"zip": "9000"},
+            "Fatnassa": {"zip": "9000"},
+            "Hajar Amor": {"zip": "9000"},
+            "Kasseb": {"zip": "9000"},
+            "Lafarke": {"zip": "9000"},
+            "Nagachia": {"zip": "9000"},
+            "Tarhouni": {"zip": "9000"}
+        },
+        "Beja Sud": {
+            "Cité El Amel": {"zip": "9023"},
+            "El Maagoula": {"zip": "9023"},
+            "Hammam Sayala": {"zip": "9052"},
+            "Mastouta": {"zip": "9021"},
+            "Mastouta Gare": {"zip": "9021"},
+            "Sidi Frej": {"zip": "9029"},
+            "Sidi Smail": {"zip": "9021"},
+        },
+        "Goubellat": {
+            "Bir El Euch": {"zip": "9080"},
+            "Briouig": {"zip": "9080"},
+            "Cheik El Ouediane El Guebli": {"zip": "9080"},
+            "Cité des Fonctionnaires": {"zip": "9080"},
+            "Cité El Hana": {"zip": "9080"},
+            "Cité El Izdihar": {"zip": "9080"},
+            "Cité El Kamh": {"zip": "9080"},
+            "Cité Essaada": {"zip": "9080"},
+            "Cité Essanabel": {"zip": "9080"},
+            "Cité Ezzouhour": {"zip": "9080"},
+            "Cité Populaire": {"zip": "9080"},
+            "Dour Ismail": {"zip": "9080"},
+            "El Fedhailia": {"zip": "9080"},
+            "El Gammarti": {"zip": "9080"},
+            "El Ogla": {"zip": "9080"},
+            "Ettraifa": {"zip": "9080"},
+            "Goubellat": {"zip": "9080"},
+            "Grame": {"zip": "9083"},
+            "Khacheb": {"zip": "9080"},
+            "Khenguet Eddihenne": {"zip": "9080"},
+            "Tella": {"zip": "9080"},
+            "Zone Industrielle": {"zip": "9080"}
+        },
+        "Mejez El Bab": {
+            "Argoub Ezzaatar": {"zip": "9070"},
+            "Chaouech": {"zip": "9072"},
+            "Cité 02 Mars": {"zip": "9071"},
+            "Cité Baccar": {"zip": "9070"},
+            "Cité de la Poste": {"zip": "9013"},
+            "Cité de la Sante": {"zip": "9070"},
+            "Cité des Proffesseurs": {"zip": "9070"},
+            "Cité Dhamene": {"zip": "9070"},
+            "Cité du Gouvernorat": {"zip": "9070"},
+            "Cité Education": {"zip": "9013"},
+            "Cité El Azima 1": {"zip": "9070"},
+            "Cité El Azima 2": {"zip": "9070"},
+            "Cité El Azima 3": {"zip": "9070"},
+            "Cité El Bahrine": {"zip": "9070"},
+            "Cité El Behi": {"zip": "9070"},
+            "Cité El Fateh": {"zip": "9070"},
+            "Cité El Ferdaous 1": {"zip": "9070"},
+            "Cité El Hana": {"zip": "9070"},
+            "Cité El Manar": {"zip": "9070"},
+            "Cité El Menchari": {"zip": "9070"},
+            "Cité Enfance": {"zip": "9013"},
+            "Cité Erriadh": {"zip": "9070"},
+            "Cité Essedk": {"zip": "9070"},
+            "Cité Ettadhamen": {"zip": "9070"},
+            "Cité Ezzouhour": {"zip": "9070"},
+            "Cité Jallazia": {"zip": "9070"},
+            "Cité Majerda": {"zip": "9070"},
+            "El Griaat": {"zip": "9071"},
+            "El Herri": {"zip": "9075"},
+            "El Ksar": {"zip": "9015"},
+            "Gueriche El Oued": {"zip": "9070"},
+            "Hidous": {"zip": "9070"},
+            "Iden": {"zip": "9070"},
+            "Louatia": {"zip": "9013"},
+            "Mejez El Bab": {"zip": "9070"},
+            "Oued Ezzitoun": {"zip": "9013"},
+            "Oued Zarga": {"zip": "9013"},
+            "Sidi Ahmed Jedidi": {"zip": "9070"},
+            "Sidi Mediene": {"zip": "9034"},
+            "Sidi Nasser": {"zip": "9044"},
+            "Toukabeur": {"zip": "9024"},
 
+        },
+        "Nefza": {
+            "Ain Zakkar": {"zip": "9012"},
+            "Beni Said": {"zip": "9010"},
+            "Bou Garnouna": {
+                "zip": "9012"
+            },
+            "Cité de la Liberte": {
+                "zip": "9010"
+            },
+            "Cité de la Poste": {
+                "zip": "9010"
+            },
+            "Cité des Carrieres": {
+                "zip": "9010"
+            },
+            "Cité des Roses": {
+                "zip": "9010"
+            },
+            "Cité El Mhiri": {
+                "zip": "9010"
+            },
+            "Cité Erriadh": {
+                "zip": "9010"
+            },
+            "Cité Essaada": {
+                "zip": "9010"
+            },
+            "Cité Ezzouhour": {
+                "zip": "9010"
+            },
+            "Cité Independance": {
+                "zip": "9010"
+            },
+            "Cité Mixte": {
+                "zip": "9010"
+            },
+            "Cité Mohsen Limam": {
+                "zip": "9010"
+            },
+            "Cité Rim": {
+                "zip": "9010"
+            },
+            "Cité Sidi Saad": {
+                "zip": "9010"
+            },
+            "Dar El Hit": {
+                "zip": "9010"
+            },
+            "El Amamria": {
+                "zip": "9010"
+            },
+            "El Ayayada Jamila": {
+                "zip": "9010"
+            },
+            "El Hemaidia": {
+                "zip": "9012"
+            },
+            "El Mazdour": {
+                "zip": "9010"
+            },
+            "El Mecherga": {
+                "zip": "9012"
+            },
+            "El Oulija": {
+                "zip": "9012"
+            },
+            "Ettaref": {
+                "zip": "9012"
+            },
+            "Ezzouaraa": {
+                "zip": "9012"
+            },
+            "Fatnassa": {
+                "zip": "9010"
+            },
+            "Jbel Diss": {
+                "zip": "9010"
+            },
+            "Jemil": {
+                "zip": "9010"
+            },
+            "Nefza": {
+                "zip": "9010"
+            },
+            "Ouechtata": {
+                "zip": "9012"
+            },
+            "Oued Bouzenna": {
+                "zip": "9010"
+            },
+            "Oued Damous": {
+                "zip": "9010"
+            },
+            "Ouled Houimel": {
+                "zip": "9010"
+            },
+            "Ouled Kacem": {
+                "zip": "9010"
+            },
+            "Ouled Salem": {
+                "zip": "9012"
+            },
+            "Oum Laabid": {
+                "zip": "9010"
+            },
+            "Tababa": {
+                "zip": "9011"
+            },
+            "Zaga": {
+                "zip": "9012"
+            }
+
+        },
+        "Teboursouk": {
+            "Ain El Hammam": {"zip": "9040"},
+            "Ain El Kehoul": {"zip": "9040"},
+            "Ain El Melliti": {"zip": "9040"},
+            "Ain Jemmala": {"zip": "9040"},
+            "Bir Ettouta": {"zip": "9040"},
+            "Borj Brahim": {"zip": "9032"},
+            "Bouzaida": {"zip": "9040"},
+            "Cité Ain El Karma": {"zip": "9040"},
+            "Cité Ain Mrad": {"zip": "9040"},
+            "Cité de la Republique": {"zip": "9040"},
+            "Cité des Martyrs": {"zip": "9040"},
+            "Cité du Stade": {"zip": "9040"},
+            "Cité El Bassatine": {"zip": "9040"},
+            "Cité El Glai": {"zip": "9040"},
+            "Cité El Gourjani": {"zip": "9040"},
+            "Cité El Hadj Abdallah": {"zip": "9040"},
+            "Cité El Ksar": {"zip": "9040"},
+            "Cité Ennacim": {"zip": "9040"},
+            "Cité Ennacim 1": {"zip": "9040"},
+            "Cité Ennacim 2": {"zip": "9040"},
+            "Cité Ezzayatine 1": {"zip": "9040"},
+            "Cité Ezzayatine 2": {"zip": "9040"},
+            "Cité Ibn Khaldoun": {"zip": "9040"},
+            "Cité Ibn Sina": {"zip": "9040"},
+            "Cité Industrielle": {"zip": "9040"},
+            "Cité Jardins": {"zip": "9040"},
+            "Cité Meska": {"zip": "9040"},
+            "Cité Oued Essah": {"zip": "9040"},
+            "Cité Sidi Bagga": {"zip": "9040"},
+            "Douga": {"zip": "9032"},
+            "Dougga Rouines": {"zip": "9040"},
+            "El Ayedh": {"zip": "9040"},
+            "El Faouar": {"zip": "9040"},
+            "El Matria": {"zip": "9040"},
+            "Fadden Essouk": {"zip": "9046"},
+            "Khalled": {"zip": "9032"},
+            "Naffet": {"zip": "9040"},
+            "Ouled Marai": {"zip": "9040"},
+            "Rihana": {"zip": "9040"},
+            "Teboursouk": {"zip": "9040"}
+        },
+        "Testour": {
+            "Ain Tounga": {"zip": "9062"},
+            "Ain Younes": {"zip": "9060"},
+            "Bab Bled": {"zip": "9014"},
+            "Cité 20 Mars": {"zip": "9060"},
+            "Cité 26 Fevrier": {"zip": "9060"},
+            "Cité Bahrnia": {"zip": "9014"},
+            "Cité Beharnia": {"zip": "9014"},
+            "Cité Ben Karouia": {"zip": "9014"},
+            "Cité Ben Othman": {"zip": "9014"},
+            "Cité Dar Echabeb": {"zip": "9014"},
+            "Cité des Andalous": {"zip": "9060"},
+            "Cité El Bassatine": {"zip": "9060"},
+            "Cité El Folla": {"zip": "9060"},
+            "Cité El Gadhoum": {"zip": "9014"},
+            "Cité El Izdihar": {"zip": "9060"},
+            "Cité El Malouf": {"zip": "9060"},
+            "Cité El Mendra": {"zip": "9014"},
+            "Cité Ennacim": {"zip": "9060"},
+            "Cité Erraoudha": {"zip": "9014"},
+            "Cité Essayadine": {"zip": "9014"},
+            "Cité Fedden Jemaa": {"zip": "9014"},
+            "Cité Gharnata 1": {"zip": "9060"},
+            "Cité Gharnata 2": {"zip": "9060"},
+            "Cité Ibn Zeidoun": {"zip": "9060"},
+            "Cité Jabbess": {"zip": "9014"},
+            "Cité Kichtilou": {"zip": "9014"},
+            "Cité Ouled Slimane": {"zip": "9014"},
+            "Cité Sidi Khouili": {"zip": "9014"},
+            "Cité Spiniair": {"zip": "9060"},
+            "Cité Tafercha": {"zip": "9014"},
+            "Cité Tijani": {"zip": "9014"},
+            "El Glaa": {"zip": "9060"},
+            "El Mellah": {"zip": "9014"},
+            "Esskhira": {"zip": "9061"},
+            "Esslouguia": {"zip": "9014"},
+            "Henchir Bou Sofra": {"zip": "9061"},
+            "Jebel Fellous": {"zip": "9014"},
+            "Jlass Bou Issa": {"zip": "9060"},
+            "Mezougha": {"zip": "9060"},
+            "Oued Jedra": {"zip": "9060"},
+            "Ouled Slama": {"zip": "9060"},
+            "Ouljet Doukhane": {"zip": "9014"},
+            "Rhiba": {"zip": "9060"},
+            "Testour": {"zip": "9060"},
+            "Zeldou": {"zip": "9060"}
+        },
+        "Thibar": {
+            "Ain Eddefali": {"zip": "9042"},
+            "Cité 2 Mars": {"zip": "9022"},
+            "Cité Commerciale": {"zip": "9022"},
+            "Cité des Ouvriers": {"zip": "9022"},
+            "Cité El Olfa": {"zip": "9022"},
+            "Cité Ennour": {"zip": "9022"},
+            "Cité Essalama": {"zip": "9022"},
+            "Cité Hached": {"zip": "9022"},
+            "Cité Ibn Khaldoun": {"zip": "9022"},
+            "Djebba": {"zip": "9042"},
+            "El Henancha": {"zip": "9042"},
+            "Ennechima": {"zip": "9022"},
+            "Thibar": {"zip": "9022"}
+        },
+
+    }
 }
-
-
