@@ -2,7 +2,25 @@
 # Tunisia Geographic API
 This API provides a list of cities and regions for any governorate in Tunisia, as well as zip codes for all Tunisian governorates.
 
-This API made with [FastApi](https://fastapi.tiangolo.com/) 
+This API made with [FastApi](https://fastapi.tiangolo.com/)
+
+# Getting Started:
+## Local development
+
+1. clone project
+2. install the requirements
+````console
+pip install -r requirements.txt
+````
+3. Use [uvicorn](https://www.uvicorn.org/) to run the FastAPI app:
+
+```console
+uvicorn api.main:app --reload --port=8000
+```
+
+3. Click 'http://127.0.0.1:8000' in the terminal, which should open the website in a new tab.
+4. Append /docs (swagger ui) or /redoc to see the documentation
+
 
 # API ROUTES :
 
