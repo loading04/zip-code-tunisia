@@ -2134,4 +2134,342 @@ data = {
             }
         }
     },
+    "Gabes": {
+        "El Hamma": {
+            "Bechima": {"zip": "6092"},
+            "Beni Ghilouf": {"zip": "6062"},
+            "Bou Attouche": {"zip": "6027"},
+            "Chenchou": {"zip": "6095"},
+            "El Hamma": {"zip": "6020"},
+            "El Hamma Sud": {"zip": "6060"},
+            "Sombat": {"zip": "6013"},
+        },
+        "El Metouia": {
+            "Cité El Fankar": {
+                "zip": "6010"
+            },
+            "Cité El Maya": {
+                "zip": "6010"
+            },
+            "Cité El Mrachda": {
+                "zip": "6010"
+            },
+            "Cité Ennacim": {
+                "zip": "6010"
+            },
+            "Cité Essalem": {
+                "zip": "6052"
+            },
+            "Cité Ezzouhour": {
+                "zip": "6010"
+            },
+            "Cité Kheireddine": {
+                "zip": "6052"
+            },
+            "Cité Nehila Farhat": {
+                "zip": "6010"
+            },
+            "El Akarit": {
+                "zip": "6042"
+            },
+            "El Aouinette": {
+                "zip": "6010"
+            },
+            "El Hicha": {
+                "zip": "6042"
+            },
+            "El Imarat": {
+                "zip": "6010"
+            },
+            "El Mida": {
+                "zip": "6052"
+            },
+            "Metouia El Maya": {
+                "zip": "6089"
+            },
+            "Ouali": {
+                "zip": "6052"
+            },
+            "Oudhref": {
+                "zip": "6052"
+            },
+            "Oued El Ghram": {
+                "zip": "6010"
+            }
+        },
+        "Gabes Medina": {
+            "Chatt Essalem": {
+                "zip": "6061"
+            },
+            "Cité 26-26": {
+                "zip": "6061"
+            },
+            "Cité Ben Kilani": {
+                "zip": "6000"
+            },
+            "Cité Commerciale": {
+                "zip": "6000"
+            },
+            "Cité des Oasis": {
+                "zip": "6000"
+            },
+            "Cité El Bled": {
+                "zip": "6061"
+            },
+            "Cité El Ftarcha": {
+                "zip": "6061"
+            },
+            "Cité El Hana": {
+                "zip": "6000"
+            },
+            "Cité El Khalij": {
+                "zip": "6000"
+            },
+            "Cité El Korniche": {
+                "zip": "6000"
+            },
+            "Cité El Mansoura": {
+                "zip": "6000"
+            },
+            "Cité El Ouns": {
+                "zip": "6000"
+            },
+            "Cité Mohamed Ali": {
+                "zip": "6000"
+            },
+            "El Mouazir": {
+                "zip": "6000"
+            },
+            "Gabes": {
+                "zip": "6000"
+            },
+            "Gabes El Hidaya": {
+                "zip": "6099"
+            },
+            "Gabes Hached": {
+                "zip": "6001"
+            },
+            "Gabes Port": {
+                "zip": "6071"
+            },
+            "Gabes Republique": {
+                "zip": "6040"
+            },
+            "Limaoua": {
+                "zip": "6000"
+            },
+            "Oued Khelifa Mahmoud": {
+                "zip": "6000"
+            },
+            "Remathi": {
+                "zip": "6000"
+            }
+        },
+        "Gabes Ouest": {
+            "Barguia": {"zip": "6041"},
+            "Bou Chemma": {"zip": "6031"},
+            "Chenini Gabes": {"zip": "6041"},
+            "Cité 2 Mars": {"zip": "6031"},
+            "Cité Ettahrir": {"zip": "6031"},
+            "Maita": {"zip": "6041"},
+            "Nahal": {"zip": "6051"},
+
+        },
+        "Gabes Sud": {
+            "Cité 7 Novembre": {"zip": "6032"},
+            "Cité Afh": {"zip": "6012"},
+            "Cité Ancien Militaire": {"zip": "6012"},
+            "Cité Azaiez": {"zip": "6014"},
+            "Cité Bedis": {"zip": "6032"},
+            "Cité Bidani": {"zip": "6012"},
+            "Cité de la Famille": {"zip": "6014"},
+            "Cité des Enseignants": {"zip": "6014"},
+            "Cité des Infirmiers": {"zip": "6014"},
+            "Cité El Ahrach": {"zip": "6072"},
+            "Cité El Amel": {"zip": "6033"},
+            "Cité El Amel 1": {"zip": "6033"},
+            "Cité El Amel 2": {"zip": "6033"},
+            "Cité El Amel 3": {"zip": "6033"},
+            "Cité El Amel 4": {"zip": "6033"},
+            "Cité El Amel 5": {"zip": "6033"},
+            "Cité El Amel 6": {"zip": "6033"},
+            "Cité El Guefercha": {"zip": "6072"},
+            "Cité El Hana Boudoura": {"zip": "6012"},
+            "Cité El Izdihar": {"zip": "6011"},
+            "Cité El Maarifa": {"zip": "6033"},
+            "Cité El Medina": {"zip": "6011"},
+            "Cité El Misk": {"zip": "6012"},
+            "Cité El Mzahid": {"zip": "6014"},
+            "Cité El Wafa": {"zip": "6032"},
+            "Cité El Yasmine": {"zip": "6014"},
+            "Cité Ennakhil": {"zip": "6033"},
+            "Cité Ennour": {"zip": "6033"},
+            "Cité Ennozh": {"zip": "6014"},
+            "Cité Esseptia": {"zip": "6014"},
+            "Cité Ezzouhour 1": {"zip": "6014"},
+            "Cité Ezzouhour 2": {"zip": "6014"},
+            "Cité Hached": {"zip": "6032"},
+            "Cité Hached 1": {"zip": "6014"},
+            "Cité Hached 2": {"zip": "6014"},
+            "Cité Ibn Khaldoun": {"zip": "6014"},
+            "Cité Medenine": {"zip": "6011"},
+            "Cité Militaire Dimassi": {"zip": "6012"},
+            "Cité Rhouma": {"zip": "6012"},
+            "Cité Snit": {"zip": "6072"},
+            "Cité Sprols": {"zip": "6072"},
+            "El Mdou": {"zip": "6022"},
+            "Gabes El Menara": {"zip": "6011"},
+            "Mtorrech": {"zip": "6014"},
+            "Sidi Boulbaba": {"zip": "6012"},
+            "Teboulbou": {"zip": "6032"},
+            "Zrig": {"zip": "6072"}
+
+        },
+        "Ghannouche": {
+            "Cité El Izdihar": {"zip": "6021"},
+            "Cité Errimel": {"zip": "6021"},
+            "Cité Ettahrir": {"zip": "6021"},
+            "Ghannouche": {"zip": "6021"}
+        },
+        "Mareth": {
+            "Ain Tounine": {"zip": "6035"},
+            "Ancien Bled": {"zip": "6080"},
+            "Arram": {"zip": "6016"},
+            "Ayoune Ezzerkine": {"zip": "6015"},
+            "Azeiza": {"zip": "6080"},
+            "Betahra": {"zip": "6081"},
+            "Betahra Sud": {"zip": "6080"},
+            "Braouka": {"zip": "6080"},
+            "Cité Commerciale": {"zip": "6080"},
+            "Cité Debaba": {"zip": "6080"},
+            "Cité El Amel": {"zip": "6080"},
+            "Cité El Argoub": {"zip": "6080"},
+            "Cité El Charfia": {"zip": "6080"},
+            "Cité El Ghardek1": {"zip": "6080"},
+            "Cité El Ghardek2": {"zip": "6080"},
+            "Cité El Ghardek3": {"zip": "6080"},
+            "Cité El Hafaya": {"zip": "6080"},
+            "Cité El Kribia": {"zip": "6080"},
+            "Cité El Masla": {"zip": "6080"},
+            "Cité El Melayha": {"zip": "6080"},
+            "Cité Ennouzha": {"zip": "6080"},
+            "Cité Garde Nationale": {"zip": "6080"},
+            "Cité Populaire": {"zip": "6036"},
+            "Cité Snit": {"zip": "6080"},
+            "Dekhilet Toujane": {"zip": "6055"},
+            "El Akhmes": {"zip": "6080"},
+            "El Alaya": {"zip": "6023"},
+            "El Frada": {"zip": "6080"},
+            "El Kaouakba": {"zip": "6080"},
+            "Ezzerkine": {"zip": "6056"},
+            "Graa Beiri": {"zip": "6080"},
+            "Kettana": {"zip": "6036"},
+            "Mareth": {"zip": "6080"},
+            "Mazraa Ben Slama": {"zip": "6080"},
+            "Mejni": {"zip": "6080"},
+            "Oued El Ghirane": {"zip": "6080"},
+            "Oued El Hajel": {"zip": "6036"},
+            "Ourifen": {"zip": "6080"},
+            "Sidi Slam": {"zip": "6036"},
+            "Sidi Touati": {"zip": "6046"},
+            "Toujane": {"zip": "6045"},
+            "Zarat": {"zip": "6026"},
+            "Zmorten": {"zip": "6080"},
+            "Zrig El Barrania": {"zip": "6036"},
+            "Zrig El Ghandri": {"zip": "6036"}
+        },
+        "Matmata": {
+            "Bou Dhafer": {"zip": "6070"},
+            "Chouabet Esmaala": {"zip": "6070"},
+            "Cité El Azezna": {"zip": "6070"},
+            "Cité Hafi Rassa": {"zip": "6070"},
+            "Cité Hedi Chaker": {"zip": "6070"},
+            "Cité Independance": {"zip": "6070"},
+            "Cité Mohamed Ali": {"zip": "6070"},
+            "Cité Ras El Oued": {"zip": "6070"},
+            "Haddej": {"zip": "6070"},
+            "Ksar Beni Aissa": {"zip": "6070"},
+            "Matmata": {"zip": "6070"},
+            "Tamezrat": {"zip": "6054"},
+            "Taoujout": {"zip": "6070"},
+            "Techine": {"zip": "6034"},
+            "Tijma": {"zip": "6070"},
+            "Zriba": {"zip": "6070"}
+        },
+        "Menzel Habib": {
+            "El Fejij": {"zip": "6030"},
+            "El Mida": {"zip": "6030"},
+            "Hejri": {"zip": "6030"},
+            "Mehamla": {"zip": "6030"},
+            "Menzel Habib": {"zip": "6030"},
+            "Ouali": {"zip": "6030"},
+            "Oued Ezzitoun": {"zip": "6030"},
+            "Ouled Dhaou": {"zip": "6030"},
+            "Zograta": {"zip": "6030"},
+        },
+        "Nouvelle Matmata": {
+            "Ancienne Zraoua": {
+                "zip": "6024"
+            },
+            "Beni Zelten": {
+                "zip": "6025"
+            },
+            "Bou Sbah": {
+                "zip": "6044"
+            },
+            "Chobet Chemlali": {
+                "zip": "6044"
+            },
+            "Cité Edechaicha": {
+                "zip": "6044"
+            },
+            "Cité El Izdihar": {
+                "zip": "6044"
+            },
+            "Cité Guedouala": {
+                "zip": "6044"
+            },
+            "Cité Ouled Slama": {
+                "zip": "6044"
+            },
+            "Dhokara": {
+                "zip": "6044"
+            },
+            "Douiouira": {
+                "zip": "6044"
+            },
+            "El Amra": {
+                "zip": "6025"
+            },
+            "Ezzahra": {
+                "zip": "6025"
+            },
+            "Laffam": {
+                "zip": "6043"
+            },
+            "Mzaten": {
+                "zip": "6025"
+            },
+            "Nouvelle Matmata": {
+                "zip": "6044"
+            },
+            "Nouvelle Zraoua": {
+                "zip": "6024"
+            },
+            "Oued El Harika": {
+                "zip": "6043"
+            },
+            "Sidi Gnaou": {
+                "zip": "6024"
+            },
+            "Zaten Beni Zelten": {
+                "zip": "6043"
+            },
+            "Zaten Haddej": {
+                "zip": "6043"
+            }
+        },
+
+    },
+
 }
