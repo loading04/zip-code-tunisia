@@ -1,5 +1,3 @@
-import pprint
-
 data = {
     "Ariana": {
         "Ariana Ville": {
@@ -229,7 +227,7 @@ data = {
 
         }
     },
-    "Beja": {
+    "Béja": {
         "Amdoun": {
             "Adailia": {"zip": "9030"},
             "Ain El Goussa": {"zip": "9030"},
@@ -631,6 +629,760 @@ data = {
             "El Henancha": {"zip": "9042"},
             "Ennechima": {"zip": "9022"},
             "Thibar": {"zip": "9022"}
+        },
+
+    },
+    "Ben Arous": {
+        "Ben Arous": {
+            "Ben Arous": {"zip": "2013"},
+            "Ben Arous Sud": {"zip": "2043"},
+        },
+        "Bou Mhel El Bassatine": {
+            "Bou Mhel": {"zip": "2097"},
+            "Cité Ben Gamra": {"zip": "2097"},
+            "Cité Ben Joud": {"zip": "2097"},
+            "Cité Bou Mhel": {"zip": "2097"},
+            "Cité Boutouria": {"zip": "2097"},
+            "Cité Chebil": {"zip": "2097"},
+            "Cité de l'interieur": {"zip": "2097"},
+            "Cité des Juges": {"zip": "2097"},
+            "Cité Diar Tounes": {"zip": "2097"},
+            "Cité El Ahmadi": {"zip": "2097"},
+            "Cité El Amen": {"zip": "2097"},
+            "Cité El Assil": {"zip": "2097"},
+            "Cité El Bassatine Ancien": {"zip": "2097"},
+            "Cité El Ferchichi": {"zip": "2097"},
+            "Cité El Iklil": {"zip": "2097"},
+            "Cité El Kenani": {"zip": "2097"},
+            "Cité El Khalij": {"zip": "2097"},
+            "Cité El Khalledi": {"zip": "2097"},
+            "Cité El Mahrajene 1": {"zip": "2097"},
+            "Cité El Mahrajene 2": {"zip": "2097"},
+            "Cité El Mouna": {"zip": "2097"},
+            "Cité El Wafa": {"zip": "2097"},
+            "Cité Ennacim 1": {"zip": "2097"},
+            "Cité Ennacim 2": {"zip": "2097"},
+            "Cité Essafa": {"zip": "2097"},
+            "Cité Essalem": {"zip": "2097"},
+            "Cité Hadrich": {"zip": "2097"},
+            "Cité Jlassi": {"zip": "2097"},
+            "Cité Mezriou": {"zip": "2097"},
+            "Cité Plein Air": {"zip": "2097"},
+            "Cité Rabiaa": {"zip": "2097"},
+            "Cité Snit": {"zip": "2097"},
+            "Cité Sprols": {"zip": "2097"},
+            "Résidence du Mediterrane": {"zip": "2097"},
+            "Résidence El Imara": {"zip": "2097"},
+            "Résidence Ennacim": {"zip": "2097"},
+            "Résidence Ezzouhour": {"zip": "2097"},
+            "Résidence Sarra": {"zip": "2097"},
+            "Résidence Sirine": {"zip": "2097"}
+        },
+        "El Mourouj": {
+            "Bir El Kassaa": {
+                "zip": "2059"
+            },
+            "Cité Alyssa 1": {
+                "zip": "2074"
+            },
+            "Cité Alyssa 2": {
+                "zip": "2074"
+            },
+            "Cité Azza 1": {
+                "zip": "2074"
+            },
+            "Cité Azza 2": {
+                "zip": "2074"
+            },
+            "Cité Commerciale Abou Sofiane": {
+                "zip": "2074"
+            },
+            "Cité Commerciale Boukhriss": {
+                "zip": "2074"
+            },
+            "Cité des Oasis": {
+                "zip": "2074"
+            },
+            "Cité El Bassatine": {
+                "zip": "2074"
+            },
+            "Cité El Bochra": {
+                "zip": "2074"
+            },
+            "Cité El Faouz": {
+                "zip": "2074"
+            },
+            "Cité El Foll": {
+                "zip": "2074"
+            },
+            "Cité El Mourouj 3 Bis": {
+                "zip": "2074"
+            },
+            "Cité El Wifak": {
+                "zip": "2074"
+            },
+            "Cité Ennakhil": {
+                "zip": "2074"
+            },
+            "Cité Ennarjes 1": {
+                "zip": "2074"
+            },
+            "Cité Ennarjes 2": {
+                "zip": "2074"
+            },
+            "Cité Ennasr 1": {
+                "zip": "2074"
+            },
+            "Cité Ennasr 2": {
+                "zip": "2074"
+            },
+            "Cité Errachid 1": {
+                "zip": "2074"
+            },
+            "Cité Errachid 2": {
+                "zip": "2074"
+            },
+            "Cité Erraoudha": {
+                "zip": "2074"
+            },
+            "Cité Erriadh": {
+                "zip": "2074"
+            },
+            "Cité Erriadh 2": {
+                "zip": "2074"
+            },
+            "Cité Essalem": {
+                "zip": "2074"
+            },
+            "Cité Ibn Jazzar 2": {
+                "zip": "2074"
+            },
+            "Cité Ibn Mandhour": {
+                "zip": "2074"
+            },
+            "Cité Jardins": {
+                "zip": "2074"
+            },
+            "Cité Moncef Bey": {
+                "zip": "2074"
+            },
+            "Cité Taher Haddad": {
+                "zip": "2074"
+            },
+            "Cité Yargoula": {
+                "zip": "2074"
+            },
+            "El Alia 1": {
+                "zip": "2074"
+            },
+            "El Alia 2": {
+                "zip": "2074"
+            },
+            "El Alia 3": {
+                "zip": "2074"
+            },
+            "El Mourouj": {
+                "zip": "2074"
+            },
+            "La Belle Residence": {
+                "zip": "2074"
+            },
+            "Résidence Chebbi": {
+                "zip": "2074"
+            },
+            "Résidence Chourouk 1": {
+                "zip": "2074"
+            },
+            "Résidence Chourouk 2": {
+                "zip": "2074"
+            },
+            "Résidence Chourouk 3": {
+                "zip": "2074"
+            },
+            "Résidence de l'horizon": {
+                "zip": "2074"
+            },
+            "Résidence de la Verdure": {
+                "zip": "2074"
+            },
+            "Résidence du Printemps": {
+                "zip": "2074"
+            },
+            "Résidence El Foll": {
+                "zip": "2074"
+            },
+            "Résidence El Khalil": {
+                "zip": "2074"
+            },
+            "Résidence El Mourjene": {
+                "zip": "2074"
+            },
+            "Résidence El Ouard": {
+                "zip": "2074"
+            },
+            "Résidence El Wafa": {
+                "zip": "2074"
+            },
+            "Résidence Ennacim": {
+                "zip": "2074"
+            },
+            "Résidence Ennaoures": {
+                "zip": "2074"
+            },
+            "Résidence Ennesrine": {
+                "zip": "2074"
+            },
+            "Résidence Erraboua": {
+                "zip": "2074"
+            },
+            "Résidence Essaad": {
+                "zip": "2074"
+            },
+            "Résidence Essaada": {
+                "zip": "2074"
+            },
+            "Résidence Essraya": {
+                "zip": "2074"
+            },
+            "Résidence Ibn Khaldoun": {
+                "zip": "2074"
+            },
+            "Résidence Ibn Zeidoun": {
+                "zip": "2074"
+            },
+            "Résidence Ines": {
+                "zip": "2074"
+            },
+            "Résidence Jinene El Mourouj": {
+                "zip": "2074"
+            },
+            "Résidence Meriem": {
+                "zip": "2074"
+            },
+            "Résidence Sidi Bou Said": {
+                "zip": "2074"
+            },
+            "Résidence Type": {
+                "zip": "2074"
+            },
+            "Résidence Zahret El Mourouj": {
+                "zip": "2074"
+            },
+
+        },
+        "Ezzahra": {
+            "Cité 18 Janvier": {"zip": "2034"},
+            "Cité Ben Miled": {
+                "zip": "2065"
+            },
+            "Cité Borj Louzir": {
+                "zip": "2034"
+            },
+            "Cité du Port": {
+                "zip": "2034"
+            },
+            "Cité du Wagon": {
+                "zip": "2034"
+            },
+            "Cité El Ahlem": {
+                "zip": "2034"
+            },
+            "Cité El Akacia": {
+                "zip": "2034"
+            },
+            "Cité El Amen": {
+                "zip": "2034"
+            },
+            "Cité El Ezz": {
+                "zip": "2034"
+            },
+            "Cité El Habib": {
+                "zip": "2065"
+            },
+            "Cité El Houl": {
+                "zip": "2065"
+            },
+            "Cité El Oulija": {
+                "zip": "2034"
+            },
+            "Cité El Ouns": {
+                "zip": "2034"
+            },
+            "Cité El Ward": {
+                "zip": "2065"
+            },
+            "Cité El Yasmine": {
+                "zip": "2065"
+            },
+            "Cité Ennakhil 1": {
+                "zip": "2034"
+            },
+            "Cité Ennakhil 2": {
+                "zip": "2034"
+            },
+            "Cité Ennasr": {
+                "zip": "2065"
+            },
+            "Cité Errachid": {
+                "zip": "2034"
+            },
+            "Cité Erriadh": {
+                "zip": "2034"
+            },
+            "Cité Hedi Khfacha": {
+                "zip": "2034"
+            },
+            "Cité Imen": {
+                "zip": "2034"
+            },
+            "Cité Industrielle": {
+                "zip": "2034"
+            },
+            "Cité Mrad 1": {
+                "zip": "2034"
+            },
+            "Cité Mrad 2": {
+                "zip": "2034"
+            },
+            "Cité Panorama": {
+                "zip": "2034"
+            },
+            "Ezzahra": {
+                "zip": "2034"
+            },
+            "Ezzahra El Habib": {
+                "zip": "2065"
+            },
+
+        },
+        "Fouchana": {
+            "Bir Zendala": {"zip": "1135"},
+            "Chebedda": {
+                "zip": "1135"
+            },
+            "Cité 20 Mars": {
+                "zip": "2082"
+            },
+            "Cité Brim": {
+                "zip": "2082"
+            },
+            "Cité Chebbi": {
+                "zip": "2082"
+            },
+            "Cité El Amel": {
+                "zip": "2082"
+            },
+            "Cité El Amel 2": {
+                "zip": "2082"
+            },
+            "Cité El Banefsej": {
+                "zip": "2082"
+            },
+            "Cité El Fateh": {
+                "zip": "2082"
+            },
+            "Cité El Hana": {
+                "zip": "2082"
+            },
+            "Cité El Hidhab": {
+                "zip": "2082"
+            },
+            "Cité El Izdihar": {
+                "zip": "2082"
+            },
+            "Cité El Misk": {
+                "zip": "2082"
+            },
+            "Cité El Moustakbel": {
+                "zip": "2082"
+            },
+            "Cité El Ward": {
+                "zip": "2082"
+            },
+            "Cité El Wifak": {
+                "zip": "2082"
+            },
+            "Cité Ennasr": {
+                "zip": "2082"
+            },
+            "Cité Ennouzha": {
+                "zip": "2082"
+            },
+            "Cité Erriadh": {
+                "zip": "2082"
+            },
+            "Cité Ezzitoun 1": {
+                "zip": "2082"
+            },
+            "Cité Khouaja": {
+                "zip": "2082"
+            },
+            "Cité Snit": {
+                "zip": "2082"
+            },
+            "Cité Trabelsi": {
+                "zip": "2082"
+            },
+            "Douar El Houch": {
+                "zip": "1135"
+            },
+            "El Menaychia": {
+                "zip": "2082"
+            },
+            "Fouchana": {
+                "zip": "2082"
+            },
+            "Meghira Centre": {
+                "zip": "2082"
+            },
+            "Meghira Inzel": {
+                "zip": "2082"
+            },
+            "Naassen": {
+                "zip": "1135"
+            },
+            "Zone Industrielle El Meghira": {
+                "zip": "2082"
+            }
+
+        },
+        "Hammam Chatt": {
+            "Bir El Bey": {"zip": "2055"},
+            "Borj Cedria": {"zip": "2084"},
+            "Hammam Chatt": {"zip": "1164"},
+        },
+        "Hammam Lif": {
+            "Bou Kornine": {
+                "zip": "2093"
+            },
+            "Cité 7 Novembre": {
+                "zip": "2050"
+            },
+            "Cité Bou Kornine 2": {
+                "zip": "2093"
+            },
+            "Cité Boussouffara": {
+                "zip": "2099"
+            },
+            "Cité Casino": {
+                "zip": "2050"
+            },
+            "Cité Dar El Bey": {
+                "zip": "2050"
+            },
+            "Cité de la Municipalite": {
+                "zip": "2050"
+            },
+            "Cité des Instituteurs": {
+                "zip": "2050"
+            },
+            "Cité des Ouvriers": {
+                "zip": "2050"
+            },
+            "Cité Ennahdha": {
+                "zip": "2050"
+            },
+            "Cité Ennasr": {
+                "zip": "2050"
+            },
+            "Cité Ennouzha": {
+                "zip": "2050"
+            },
+            "Cité Essanaoubria": {
+                "zip": "2050"
+            },
+            "Cité Hached": {
+                "zip": "2050"
+            },
+            "Cité Kortoba": {
+                "zip": "2050"
+            },
+            "Cité Mongi Slim": {
+                "zip": "2050"
+            },
+            "Cité Office Cereale": {
+                "zip": "2050"
+            },
+            "Cité Thermale": {
+                "zip": "2050"
+            },
+            "Hammam Lif": {
+                "zip": "2050"
+            }
+
+        },
+        "Megrine": {
+            "Cité Founiz": {"zip": "2014"},
+            "Megrine": {"zip": "2033"},
+            "Megrine Chaker": {"zip": "2024"},
+            "Megrine Coteau": {"zip": "2033"},
+            "Megrine Jaouhara": {"zip": "2024"},
+            "Megrine Riadh": {"zip": "2014"},
+            "Megrine Superieur": {"zip": "2033"},
+            "Saint Gobin": {"zip": "2014"},
+            "Sidi Rezig": {"zip": "2033"},
+            "Zone Industrielle Saint Gobin": {"zip": "2014"}
+        },
+        "Mohamadia": {
+            "Cité Bou Akroucha": {
+                "zip": "1145"
+            },
+            "Cité Bourbai": {
+                "zip": "1145"
+            },
+            "Cité Cebbalet Chikh": {
+                "zip": "1145"
+            },
+            "Cité Chaabane": {
+                "zip": "1145"
+            },
+            "Cité Chebbi": {
+                "zip": "1145"
+            },
+            "Cité de la Carriere 1": {
+                "zip": "1145"
+            },
+            "Cité de la Carriere 2": {
+                "zip": "1145"
+            },
+            "Cité du Lycee": {
+                "zip": "1145"
+            },
+            "Cité El Amen": {
+                "zip": "1145"
+            },
+            "Cité El Atiq": {
+                "zip": "1145"
+            },
+            "Cité El Baccouch": {
+                "zip": "1145"
+            },
+            "Cité El Bassatine": {
+                "zip": "1145"
+            },
+            "Cité El Elmi 1": {
+                "zip": "1145"
+            },
+            "Cité El Elmi 2": {
+                "zip": "1145"
+            },
+            "Cité El Haddad": {
+                "zip": "1145"
+            },
+            "Cité El Hana": {
+                "zip": "1145"
+            },
+            "Cité El Ksar": {
+                "zip": "1145"
+            },
+            "Cité El Omri 1": {
+                "zip": "1145"
+            },
+            "Cité El Omri 2": {
+                "zip": "1145"
+            },
+            "Cité Ellouata": {
+                "zip": "1145"
+            },
+            "Cité Ennacim 1": {
+                "zip": "1145"
+            },
+            "Cité Ennacim 2": {
+                "zip": "1145"
+            },
+            "Cité Ennasr": {
+                "zip": "1145"
+            },
+            "Cité Ennouzha": {
+                "zip": "1145"
+            },
+            "Cité Erriadh": {
+                "zip": "1145"
+            },
+            "Cité Essaada 1": {
+                "zip": "1145"
+            },
+            "Cité Essaada 2": {
+                "zip": "1145"
+            },
+            "Cité Essaada 3": {
+                "zip": "1145"
+            },
+            "Cité Essalem": {
+                "zip": "1145"
+            },
+            "Cité Ettayari": {
+                "zip": "1145"
+            },
+            "Cité Ettouahria": {
+                "zip": "1145"
+            },
+            "Cité Ezzitoun 2": {
+                "zip": "1145"
+            },
+            "Cité Fattouma Bourguiba": {
+                "zip": "1145"
+            },
+            "Cité Hached 1": {
+                "zip": "1145"
+            },
+            "Cité Hached 2": {
+                "zip": "1145"
+            },
+            "Cité Jaouhara": {
+                "zip": "1145"
+            },
+            "Cité Jardins": {"zip": "1145"},
+            "Cité Mongi Slim 1": {"zip": "1145"},
+            "Cité Mongi Slim 2": {"zip": "1145"},
+            "Cité Oudhna": {"zip": "1145"},
+            "Cité Taieb Mhiri": {"zip": "1145"},
+            "Cité Tnich": {"zip": "1145"},
+            "Immeubles de l'interieur": {"zip": "1145"},
+            "Mohamadia": {"zip": "1145"},
+            "Résidence El Ferdaous": {"zip": "1145"},
+            "Résidence El Moustakbel": {"zip": "1145"},
+            "Résidence El Ouns": {"zip": "1145"},
+            "Résidence Ettaoufik": {"zip": "1145"}
+
+        },
+        "Mornag": {
+            "Ahmed Zaied": {"zip": "2090"},
+            "Ain Regad": {"zip": "2054"},
+            "Barrouta": {"zip": "2054"},
+            "Ben Nouiji": {"zip": "2090"},
+            "Bir Jedid": {"zip": "2054"},
+            "Borj Essoufi": {"zip": "2090"},
+            "Bou Jerdga": {"zip": "2090"},
+            "Chala": {"zip": "2090"},
+            "Chamine": {"zip": "2090"},
+            "Cité Air Nouvelle": {"zip": "2064"},
+            "Cité Ennasr": {"zip": "2090"},
+            "Cité Ettayarane": {"zip": "2064"},
+            "Douar la Porte": {"zip": "2090"},
+            "Douar Salem": {"zip": "2090"},
+            "El Abebsa": {"zip": "2064"},
+            "El Alelgua": {"zip": "2090"},
+            "El Araba": {"zip": "2090"},
+            "El Fendria": {"zip": "2064"},
+            "El Gounna": {"zip": "2054"},
+            "El Haouamed": {"zip": "2090"},
+            "El Kabouti": {"zip": "2064"},
+            "El Ksibi": {"zip": "2090"},
+            "Errissala": {"zip": "2044"},
+            "Ettiayra": {"zip": "2090"},
+            "Ferme Marquee": {"zip": "2090"},
+            "Henchir Bouchta": {"zip": "2090"},
+            "Henchir El Ghobar": {"zip": "2090"},
+            "Henchir Kharrouba": {"zip": "2054"},
+            "Henchir Khelil": {"zip": "2090"},
+            "Huilerie Bayrem": {"zip": "2090"},
+            "Jebel Ersass": {"zip": "2064"},
+            "Jourjou": {"zip": "2064"},
+            "Khelidia": {"zip": "2054"},
+            "Kouenjel": {"zip": "2054"},
+            "Mirghna": {"zip": "2064"},
+            "Mornag": {"zip": "2090"},
+            "Ouzra": {"zip": "2090"},
+            "Sidi Messaoud": {"zip": "2054"},
+            "Sidi Othman Landari": {"zip": "2054"},
+            "Sidi Saad": {"zip": "2090"},
+            "Sidi Salem El Garci": {"zip": "2064"},
+            "Sondage": {"zip": "2054"},
+            "Tarhouna 1": {"zip": "2090"},
+            "Tarhouna 2": {"zip": "2090"},
+            "Zaouit Mornag": {"zip": "2090"},
+
+        },
+        "Nouvelle Medina": {
+            "El Yasminette": {"zip": "2096"},
+            "Nouvelle Medina": {"zip": "2063"},
+        },
+        "Rades": {
+            "Chouchet Rades": {
+                "zip": "2040"
+            },
+            "Cité 20 Mars": {
+                "zip": "1125"
+            },
+            "Cité El Ezz": {
+                "zip": "2098"
+            },
+            "Cité Ennour": {
+                "zip": "1125"
+            },
+            "Cité Mohamed Ali": {
+                "zip": "2040"
+            },
+            "Cité Nouvelle": {
+                "zip": "2098"
+            },
+            "Cité Rades 2": {
+                "zip": "2040"
+            },
+            "Cité Sfaxi": {
+                "zip": "2040"
+            },
+            "Cité Sncft": {
+                "zip": "2040"
+            },
+            "Cité Snit": {
+                "zip": "2018"
+            },
+            "Cité Taieb Mhiri 1": {
+                "zip": "2040"
+            },
+            "Cité Taieb Mhiri 2": {
+                "zip": "2040"
+            },
+            "Cité Taieb Mhiri 3": {
+                "zip": "2040"
+            },
+            "Decouppage Haj Aleya": {
+                "zip": "2018"
+            },
+            "Rades": {
+                "zip": "2040"
+            },
+            "Rades 7 Novembre": {
+                "zip": "2018"
+            },
+            "Rades El Mrah": {
+                "zip": "2098"
+            },
+            "Rades Foret": {
+                "zip": "2098"
+            },
+            "Rades Medina": {
+                "zip": "2098"
+            },
+            "Rades Meliane": {
+                "zip": "2098"
+            },
+            "Rades Mongil": {
+                "zip": "2098"
+            },
+            "Rades Plage": {
+                "zip": "2040"
+            },
+            "Rades Saline": {
+                "zip": "1125"
+            },
+            "Village Mediterranee": {
+                "zip": "2018"
+            },
+            "Ville Sportive": {
+                "zip": "2018"
+            },
+            "Zone Industrielle 1": {
+                "zip": "1125"
+            },
+            "Zone Industrielle 2": {
+                "zip": "1125"
+            },
+            "Zone Petroliere": {
+                "zip": "1125"
+            },
         },
 
     }
