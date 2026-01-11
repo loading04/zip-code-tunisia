@@ -1,5 +1,5 @@
 import fastapi
-import data
+from . import data
 from typing import Optional
 
 app = fastapi.FastAPI()

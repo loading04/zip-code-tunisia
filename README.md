@@ -41,7 +41,7 @@ The endpoint returns a JSON object with a dictionary of regions for the specifie
 
 ### Example of Usage
 ```
- http://127.0.0.1:8000/region_gover?gover=Ariana
+ http://127.0.0.1:8000/region_gover?governorate=Ariana
   ```
 ### Example of Response
 
